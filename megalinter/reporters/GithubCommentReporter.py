@@ -38,7 +38,10 @@ class GithubCommentReporter(Reporter):
             github_repo = config.get("GITHUB_REPOSITORY")
             run_id = config.get("GITHUB_RUN_ID")
             sha = config.get("GITHUB_SHA")
-            action_run_url = f"https://github.com/{github_repo}/actions/runs/{run_id}"
+
+            action_run_url=config.get("GITHUB_ACTION_RUN_URL", f"https://github.com/{github_repo}/actions/runs/{run_id}")
+            action_run_url_desc=config.get("GITHUB_ACTION_RUN_URL_DESC", "Github Action page")
+
             table_header = ["Descriptor", "Linter", "Found", "Fixed", "Errors"]
             if self.master.show_elapsed_time is True:
                 table_header += ["Elapsed time"]
@@ -103,7 +106,7 @@ class GithubCommentReporter(Reporter):
             p_r_msg += table_content + os.linesep
             p_r_msg += (
                 f"See errors details in [**artifact Mega-Linter reports** on "
-                f"GitHub Action page]({action_run_url})" + os.linesep
+                f"{action_run_url_desc}]({action_run_url})" + os.linesep
             )
             if self.master.validate_all_code_base is False:
                 p_r_msg += (
