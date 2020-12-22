@@ -42,3 +42,35 @@ linters:
       vscode:
         - name: hadolint
           url: https://marketplace.visualstudio.com/items?itemName=exiasr.hadolint
+  # docker-label-inspector
+  - linter_name: docker-label-inspector
+    name: DOCKERFILE_DLI
+    linter_url: https://github.com/garethr/docker-label-inspector
+    linter_rules_url: https://github.com/garethr/docker-label-inspector#linter
+    linter_rules_configuration_url: https://github.com/garethr/docker-label-inspector#linter
+    cli_executable: 'dli'
+    cli_lint_extra_args:
+      - "lint"
+      - "--dockerfile"
+    examples:
+      - "dli lint --dockerfile Dockerfile"
+    install:
+      dockerfile:
+        - RUN pip install -e "git+https://github.com/volkc/docker-label-inspector.git@master#egg=docker-label-inspector"
+  # docker-label-inspector
+  - linter_name: docker-label-inspector-validate
+    name: DOCKERFILE_DLI_VALIDATE
+    linter_url: https://github.com/garethr/docker-label-inspector
+    linter_rules_url: https://github.com/garethr/docker-label-inspector#linter
+    linter_rules_configuration_url: https://github.com/garethr/docker-label-inspector#linter
+    cli_executable: 'dli'
+    cli_lint_extra_args:
+      - "validate"
+      - "--dockerfile"
+    cli_config_arg_name: '--schema'
+    config_file_name: .docker-label-inspector-schema.json
+    examples:
+      - "dli validate --dockerfile Dockerfile --schema .docker-label-inspector-schema.json"
+    install:
+      dockerfile:
+        - RUN pip install -e "git+https://github.com/volkc/docker-label-inspector.git@master#egg=docker-label-inspector"

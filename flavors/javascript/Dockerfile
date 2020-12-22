@@ -162,6 +162,12 @@ RUN go get mvdan.cc/sh/v3/cmd/shfmt
 # hadolint installation
 COPY --from=dockerfile-lint /bin/hadolint /usr/bin/hadolint
 
+# docker-label-inspector installation
+RUN pip install -e "git+https://github.com/volkc/docker-label-inspector.git@master#egg=docker-label-inspector"
+
+# docker-label-inspector-validate installation
+RUN pip install -e "git+https://github.com/volkc/docker-label-inspector.git@master#egg=docker-label-inspector"
+
 # dotenv-linter installation
 RUN wget -q -O - https://raw.githubusercontent.com/dotenv-linter/dotenv-linter/master/install.sh | sh -s
 
