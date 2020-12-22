@@ -51,6 +51,7 @@ linters:
     cli_executable: 'dli'
     cli_lint_extra_args:
       - "lint"
+    cli_lint_extra_args_after:
       - "--dockerfile"
     examples:
       - "dli lint --dockerfile Dockerfile"
@@ -66,6 +67,7 @@ linters:
     cli_executable: 'dli'
     cli_lint_extra_args:
       - "validate"
+    cli_lint_extra_args_after:
       - "--dockerfile"
     cli_config_arg_name: '--schema'
     config_file_name: .docker-label-inspector-schema.json
