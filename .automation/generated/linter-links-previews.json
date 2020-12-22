@@ -64,6 +64,16 @@
         "image": "https://repository-images.githubusercontent.com/35726310/78196080-8aee-11ea-8736-5d358571e7db",
         "title": "dart-lang/sdk"
     },
+    "docker-label-inspector": {
+        "description": "Docker Label Inspector is a tool to help ensure you're providing your Docker images with the metadata they will need out in the wilds of the internet. - garethr/docker-label-inspector",
+        "image": "https://avatars2.githubusercontent.com/u/2029?s=400&v=4",
+        "title": "garethr/docker-label-inspector"
+    },
+    "docker-label-inspector-validate": {
+        "description": "Docker Label Inspector is a tool to help ensure you're providing your Docker images with the metadata they will need out in the wilds of the internet. - garethr/docker-label-inspector",
+        "image": "https://avatars2.githubusercontent.com/u/2029?s=400&v=4",
+        "title": "garethr/docker-label-inspector"
+    },
     "dockerfilelint": {
         "description": "An opinionated Dockerfile linter. Contribute to replicatedhq/dockerfilelint development by creating an account on GitHub.",
         "image": "https://avatars3.githubusercontent.com/u/13105802?s=400&v=4",

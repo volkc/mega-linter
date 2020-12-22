@@ -9,6 +9,8 @@
 | ------ | ----------------- |
 | [dockerfilelint](dockerfile_dockerfilelint.md) | [DOCKERFILE_DOCKERFILELINT](dockerfile_dockerfilelint.md) |
 | [hadolint](dockerfile_hadolint.md) | [DOCKERFILE_HADOLINT](dockerfile_hadolint.md) |
+| [docker-label-inspector](dockerfile_docker_label_inspector.md) | [DOCKERFILE_DLI](dockerfile_docker_label_inspector.md) |
+| [docker-label-inspector-validate](dockerfile_docker_label_inspector_validate.md) | [DOCKERFILE_DLI_VALIDATE](dockerfile_docker_label_inspector_validate.md) |
 
 ## Linted files
 

@@ -4,7 +4,7 @@ repo_url: https://github.com/nvuillam/mega-linter
 edit_uri: tree/master/docs
 site_author: Nicolas Vuillamy
 # site_description-start
-site_description: Mega-Linter analyzes 38 languages, 15 formats, 16 tooling formats , abusive copy-pastes and spelling mistakes in your repository sources, generate reports in several formats, and can even apply formatting and auto-fixes with auto-generated commit or PR, to ensure all your projects are clean, whatever IDE/toolbox are used by their developers !
+site_description: Mega-Linter analyzes 38 languages, 15 formats, 18 tooling formats , abusive copy-pastes and spelling mistakes in your repository sources, generate reports in several formats, and can even apply formatting and auto-fixes with auto-generated commit or PR, to ensure all your projects are clean, whatever IDE/toolbox are used by their developers !
 # site_description-end
 copyright: Copyright &copy; 2020 <a href="https://github.com/nvuillam">Nicolas Vuillamy</a>
 theme:
@@ -203,6 +203,8 @@ nav:
               - "All DOCKERFILE linters": "descriptors/dockerfile.md"
               - "dockerfilelint": "descriptors/dockerfile_dockerfilelint.md"
               - "hadolint": "descriptors/dockerfile_hadolint.md"
+              - "docker-label-inspector": "descriptors/dockerfile_docker_label_inspector.md"
+              - "docker-label-inspector-validate": "descriptors/dockerfile_docker_label_inspector_validate.md"
           - "EDITORCONFIG":
               - "All EDITORCONFIG linters": "descriptors/editorconfig.md"
               - "editorconfig-checker": "descriptors/editorconfig_editorconfig_checker.md"
